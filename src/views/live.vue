@@ -27,12 +27,12 @@ export default {
   },
   created() {
     var self = this;
-    //获取30个直播
+    //获取斗鱼30个直播
     axios.get("/api/RoomApi/live", {}).then(res => {
       if (res.status == 200) {
         var data = res.data.data;
-        self.indexLiveList = res.data.data;
-        console.log(res.data);
+        self.indexLiveList = data;
+        console.log(data);
       }
     });
   },

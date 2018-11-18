@@ -13,6 +13,13 @@ module.exports = {
             pathRewrite: {
              '^/api': '/api'
             }
+        },
+        '/idata': {
+            target: 'http://open.douyucdn.cn', // 设置你调用的接口域名和端口号
+            changeOrigin: true,   // 跨域
+            pathRewrite: {
+            '^/idata': 'https://api02.idataapi.cn/'
+          }
         }
     },
     // Various Dev Server settings

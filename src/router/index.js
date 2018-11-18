@@ -2,19 +2,16 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/views/index'
 import live from '@/views/live'
-import video from '@/components/video'
+import video from '@/views/video'
 import information from '@/components/information'
 import my from '@/components/my'
 //二级页面
 import liveDetail from '../views/liveDetail'
+
 Vue.use(Router)
 
 export default new Router({
 	routes: [
-		// {
-		// 	path: '/',
-		// 	redirect: '/live',
-		// },
 		{
 			path: '/',
 			alias:'/live',
